@@ -1,0 +1,92 @@
+{
+  "seed": 2024,
+  "model": "VGG-16 (CNN thuần)",
+  "best_epoch": 3,
+  "training_seconds": 458.989,
+  "pretrained": true,
+  "pretrained_backbone": true,
+  "classifier_reinitialized": true,
+  "merged_for_inference": false,
+  "parameters": 134281029,
+  "model_size_mb": 512.24,
+  "test_accuracy": 0.7306501547987616,
+  "test_balanced_accuracy": 0.7343324207490954,
+  "test_macro_precision": 0.73331314062211,
+  "test_macro_recall": 0.7343324207490954,
+  "test_macro_f1": 0.7276814313953417,
+  "test_weighted_f1": 0.7255392988965843,
+  "test_loss": 0.9041096590251746,
+  "latency_mean_ms": 12.648,
+  "latency_std_ms": 0.96,
+  "gpu_memory_mb": 2095.81,
+  "per_class": {
+    "daisy": {
+      "precision": 0.7559055118110236,
+      "recall": 0.8421052631578947,
+      "f1": 0.7966804979253111,
+      "support": 114
+    },
+    "dandelion": {
+      "precision": 0.7417582417582418,
+      "recall": 0.8544303797468354,
+      "f1": 0.7941176470588235,
+      "support": 158
+    },
+    "rose": {
+      "precision": 0.6015625,
+      "recall": 0.6581196581196581,
+      "f1": 0.6285714285714286,
+      "support": 117
+    },
+    "sunflower": {
+      "precision": 0.8073394495412844,
+      "recall": 0.8,
+      "f1": 0.8036529680365296,
+      "support": 110
+    },
+    "tulip": {
+      "precision": 0.76,
+      "recall": 0.5170068027210885,
+      "f1": 0.6153846153846154,
+      "support": 147
+    }
+  },
+  "confusion_matrix": [
+    [
+      96,
+      11,
+      4,
+      1,
+      2
+    ],
+    [
+      8,
+      135,
+      2,
+      13,
+      0
+    ],
+    [
+      8,
+      11,
+      77,
+      1,
+      20
+    ],
+    [
+      6,
+      12,
+      2,
+      88,
+      2
+    ],
+    [
+      9,
+      13,
+      43,
+      6,
+      76
+    ]
+  ],
+  "checkpoint": "E:\\NCKH\\DL\\CNN\\RepLKNet\\results\\flowers\\seed_2024\\vgg16_best.pt"
+}

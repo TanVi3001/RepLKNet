@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "model": "RepLKNet-31B",
+  "best_epoch": 3,
+  "training_seconds": 1359.615,
+  "pretrained": true,
+  "pretrained_backbone": true,
+  "classifier_reinitialized": true,
+  "merged_for_inference": true,
+  "parameters": 78507397,
+  "model_size_mb": 300.35,
+  "test_accuracy": 0.9535603715170279,
+  "test_balanced_accuracy": 0.9498932604043482,
+  "test_macro_precision": 0.9577503983256024,
+  "test_macro_recall": 0.9498932604043482,
+  "test_macro_f1": 0.953226972577848,
+  "test_weighted_f1": 0.9535184034853489,
+  "test_loss": 0.5067651328103092,
+  "latency_mean_ms": 27.405,
+  "latency_std_ms": 3.643,
+  "gpu_memory_mb": 1320.66,
+  "per_class": {
+    "daisy": {
+      "precision": 0.9636363636363636,
+      "recall": 0.9298245614035088,
+      "f1": 0.9464285714285714,
+      "support": 114
+    },
+    "dandelion": {
+      "precision": 0.9457831325301205,
+      "recall": 0.9936708860759493,
+      "f1": 0.9691358024691358,
+      "support": 158
+    },
+    "rose": {
+      "precision": 0.9727272727272728,
+      "recall": 0.9145299145299145,
+      "f1": 0.9427312775330396,
+      "support": 117
+    },
+    "sunflower": {
+      "precision": 0.9904761904761905,
+      "recall": 0.9454545454545454,
+      "f1": 0.9674418604651163,
+      "support": 110
+    },
+    "tulip": {
+      "precision": 0.9161290322580645,
+      "recall": 0.9659863945578231,
+      "f1": 0.9403973509933775,
+      "support": 147
+    }
+  },
+  "confusion_matrix": [
+    [
+      106,
+      5,
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      157,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      107,
+      0,
+      8
+    ],
+    [
+      1,
+      2,
+      0,
+      104,
+      3
+    ],
+    [
+      1,
+      1,
+      3,
+      0,
+      142
+    ]
+  ],
+  "checkpoint": "E:\\NCKH\\DL\\CNN\\RepLKNet\\results\\flowers\\seed_42\\replknet31b_best.pt"
+}

@@ -1,0 +1,35 @@
+{
+  "dataset": "alxmamaev/flowers-recognition",
+  "data_root": "E:\\NCKH\\DL\\CNN\\RepLKNet\\data\\flowers",
+  "class_names": [
+    "daisy",
+    "dandelion",
+    "rose",
+    "sunflower",
+    "tulip"
+  ],
+  "image_size": 224,
+  "split": {
+    "train": 3022,
+    "val": 649,
+    "test": 646
+  },
+  "epochs": 3,
+  "batch_size": 8,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.1,
+  "grad_clip": 1.0,
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "device": "cuda",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "deterministic": true,
+  "pretrained_initialization": true
+}

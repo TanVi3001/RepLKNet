@@ -1,0 +1,78 @@
+[
+  {
+    "model": "VGG-16 (CNN thuần)",
+    "prediction": {
+      "top1": {
+        "index": 409,
+        "label": "analog clock",
+        "confidence": 0.13396431505680084
+      },
+      "top5": [
+        {
+          "index": 409,
+          "label": "analog clock",
+          "confidence": 0.13396431505680084
+        },
+        {
+          "index": 549,
+          "label": "envelope",
+          "confidence": 0.10971786826848984
+        },
+        {
+          "index": 551,
+          "label": "face powder",
+          "confidence": 0.10050548613071442
+        },
+        {
+          "index": 419,
+          "label": "Band Aid",
+          "confidence": 0.08782921731472015
+        },
+        {
+          "index": 446,
+          "label": "binder",
+          "confidence": 0.07596268504858017
+        }
+      ],
+      "elapsed_ms": 406.94129999610595
+    }
+  },
+  {
+    "model": "RepLKNet-31B",
+    "prediction": {
+      "top1": {
+        "index": 787,
+        "label": "shield",
+        "confidence": 0.38034921884536743
+      },
+      "top5": [
+        {
+          "index": 787,
+          "label": "shield",
+          "confidence": 0.38034921884536743
+        },
+        {
+          "index": 746,
+          "label": "puck",
+          "confidence": 0.18615645170211792
+        },
+        {
+          "index": 610,
+          "label": "jersey",
+          "confidence": 0.01256695669144392
+        },
+        {
+          "index": 433,
+          "label": "bathing cap",
+          "confidence": 0.010843880474567413
+        },
+        {
+          "index": 916,
+          "label": "web site",
+          "confidence": 0.006559910252690315
+        }
+      ],
+      "elapsed_ms": 185.7185999979265
+    }
+  }
+]

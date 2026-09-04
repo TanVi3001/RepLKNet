@@ -4,5 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 weights/*.pth
 data/
+external_images/
 results/flowers/checkpoints/
 *.pt

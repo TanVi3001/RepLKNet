@@ -9,8 +9,7 @@ RepLKNet/
 ├── data/flowers/                         # Dataset Flowers Recognition
 ├── notebooks/
 │   ├── Flower_Experiment_Vietnamese.ipynb             # Thực nghiệm chính, nhiều seed
-│   ├── Flower_Dataset_Demo_Vietnamese.ipynb           # Demo ảnh và Grad-CAM
-│   └── Flower_External_Image_Light_Demo_Vietnamese.ipynb # Train nhẹ + ảnh ngoài dataset
+│   └── Flower_External_Image_Light_Demo_Vietnamese.ipynb # Nhận diện ảnh ngoài dataset
 ├── RepLKNet-pytorch/                     # Source RepLKNet chính thức
 ├── src/
 │   ├── flower_experiment.py             # Dataset, train, metrics, checkpoint
@@ -54,7 +53,7 @@ Dataset được đọc bằng `ImageFolder`, gồm 5 lớp: `daisy`, `dandelion
 - báo cáo accuracy, macro-F1, weighted-F1, precision, recall, confusion matrix, số tham số, thời gian và VRAM;
 - chạy nhiều seed để báo cáo mean ± standard deviation thay vì kết luận từ một lần chạy.
 
-Ảnh dùng cho demo ngoài dataset phải nằm trong `external_images/`. Notebook kiểm tra ảnh này không thuộc `data/flowers/` và không có trong split manifest trước khi nhận diện, nhằm tránh data leakage.
+Ảnh dùng cho nhận diện ngoài mẫu có thể đặt trong `external_images/` hoặc truyền bằng `EXTERNAL_IMAGE_PATH`/biến môi trường `REPLKNET_EXTERNAL_IMAGE`. Notebook kiểm tra ảnh không thuộc `data/flowers/`, không có trong split manifest và không trùng SHA-256 với bất kỳ ảnh nào trong dataset trước khi chạy cả hai model. Ảnh này chỉ dùng cho inference, không được đưa vào train/test hoặc metrics.
 
 ## Chạy thực nghiệm đầy đủ
 
@@ -70,11 +69,10 @@ cd E:\NCKH\DL\CNN\RepLKNet\RepLKNet
 
 Kết quả được lưu trong `results/flowers/`, gồm `summary.csv`, `aggregate_metrics.json`, `conclusion.md`, lịch sử train, confusion matrix, checkpoint tốt nhất và manifest của split.
 
-## Ba notebook chính
+## Hai notebook chính
 
 1. `Flower_Experiment_Vietnamese.ipynb`: thực nghiệm chính để lấy metrics có ý nghĩa khoa học giữa RepLKNet và VGG-16 trên test set độc lập.
-2. `Flower_Dataset_Demo_Vietnamese.ipynb`: hiển thị ảnh Flowers và so sánh cách hai model nhìn ảnh qua preprocessing/Grad-CAM.
-3. `Flower_External_Image_Light_Demo_Vietnamese.ipynb`: train nhẹ một epoch và nhận diện một ảnh hoa hoàn toàn bên ngoài train/test.
+2. `Flower_External_Image_Light_Demo_Vietnamese.ipynb`: nhận diện một ảnh hoa hoàn toàn bên ngoài train/test bằng cả hai model.
 
 Mở notebook bằng:
 

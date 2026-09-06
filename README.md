@@ -91,3 +91,7 @@ Checkpoint ImageNet của RepLKNet-31B được đặt tại `weights/RepLKNet-3
 - [Paper: Scaling Up Your Kernels to 31x31](https://arxiv.org/abs/2203.06717)
 - [Repository RepLKNet chính thức](https://github.com/DingXiaoH/RepLKNet-pytorch)
 - [Flowers Recognition trên Kaggle](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)
+
+## Tài liệu giải thích và demo
+
+- [RepLKNet: What, Why so vs CNN, How và demo so sánh](docs/REPLKNET_QA_VI.md)
